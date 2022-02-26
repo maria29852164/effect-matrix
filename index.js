@@ -8,7 +8,7 @@ const h = canvas.height
 let col = Math.floor( w / 20) + 1
 
 let ypos =  Array(col).fill(0)
-console.log (``)
+console.log (`col ${col} array ${ypos}`)
 
 
 
@@ -19,7 +19,7 @@ const matrixEffect=()=>{
 
 	// Set color to green and font to 15pt monospace in the drawing context
 	ctx.fillStyle = '#0f0';
-	ctx.font = '20pt monospace';
+	ctx.font = '20pt courier';
      ypos.forEach((y,index)=>{
          const stringRandom = String.fromCharCode(Math.random() * 122 )
          const x =  index * 20 
